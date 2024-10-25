@@ -25,7 +25,7 @@
 
         <ion-row>
           <ion-col>
-            <ion-button expand="block" (click)="append('+')">-</ion-button>
+            <ion-button expand="block" (click)="append('-')">-</ion-button>
           </ion-col>
           <ion-col>
             <ion-button expand="block" (click)="clear()">C</ion-button>
@@ -37,11 +37,11 @@
 
         <ion-row>
           <ion-col>
-            <ion-datetime-button datetime="datetime" expand="block" (click)="append('2')"></ion-datetime-button>
+            <ion-datetime-button datetime="datetime" ></ion-datetime-button>
 
           <ion-modal [keepContentsMounted]="true">
             <ng-template>
-              <ion-datetime id="datetime"></ion-datetime>
+              <ion-datetime id="datetime" expand="block" (click)="append('date1')"></ion-datetime>
             </ng-template>
           </ion-modal>
           </ion-col>
