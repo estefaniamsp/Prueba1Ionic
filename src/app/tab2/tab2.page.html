@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Repositorio
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,32 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
+      <ion-title size="large">Repositorio</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col class="center-col">
+          <ion-img
+            src="assets/icon/yo.jpeg"
+            alt="Estefania Sanchez"
+            class="img-estef"
+          ></ion-img>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <div class="social-buttons">
+            <ion-button href="https://github.com/estefaniamsp/Prueba1Ionic" target="_blank" color="primary">
+              <ion-icon name="logo-github" slot="start"></ion-icon> Github
+            </ion-button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+
 </ion-content>

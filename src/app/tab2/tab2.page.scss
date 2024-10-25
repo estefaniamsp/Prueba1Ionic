@@ -1,0 +1,19 @@
+.img-estef {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+.social-buttons {
+    margin-top: 15px;
+    text-align: left;
+    justify-content: center;
+}
+
+ion-button {
+    --border-radius: 20px;
+    margin-right: 10px;
+    justify-content: center;
+}
