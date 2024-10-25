@@ -13,34 +13,50 @@
       </ion-toolbar>
     </ion-header>
     
-    <ion-content>
+    <div class="calcular-fechas">
       <ion-grid>
-        <ion-col>
-          <ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-item>
+              <ion-input id="respuesta" readonly [(ngModel)]="resultado"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
 
-            <ion-datetime-button datetime="datetime"></ion-datetime-button>
+        <ion-row>
+          <ion-col>
+            <ion-button expand="block" (click)="append('+')">-</ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button expand="block" (click)="clear()">C</ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button expand="block" (click)="calculate()">=</ion-button>
+          </ion-col>
+        </ion-row>
 
-            <ion-modal [keepContentsMounted]="true">
-              <ng-template>
-                <ion-datetime id="datetime"></ion-datetime>
-              </ng-template>
-            </ion-modal>
-            
-          </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-datetime-button datetime="datetime" expand="block" (click)="append('2')"></ion-datetime-button>
 
-          <ion-row>
+          <ion-modal [keepContentsMounted]="true">
+            <ng-template>
+              <ion-datetime id="datetime"></ion-datetime>
+            </ng-template>
+          </ion-modal>
+          </ion-col>
 
-            <ion-datetime-button datetime="datetime"></ion-datetime-button>
+          <ion-col>
+            <ion-datetime-button datetime="datetime" expand="block" (click)="append('date2')"></ion-datetime-button>
 
-            <ion-modal [keepContentsMounted]="true">
-              <ng-template>
-                <ion-datetime id="datetime"></ion-datetime>
-              </ng-template>
-            </ion-modal>
-
-          </ion-row>
-        </ion-col>
+          <ion-modal [keepContentsMounted]="true">
+            <ng-template>
+              <ion-datetime id="datetime"></ion-datetime>
+            </ng-template>
+          </ion-modal>
+          </ion-col>
+        </ion-row>
       </ion-grid>
-    </ion-content>
-
+    </div>
+    
   </ion-content>
