@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Storage } from '@ionic/storage-angular';
+
 
 @Component({
   selector: 'app-tab3',
@@ -6,7 +8,18 @@ import { Component } from '@angular/core';
   styleUrls: ['tab3.page.scss']
 })
 export class Tab3Page {
+  texto: string = '';
 
-  constructor() {}
+  constructor(private storage: Storage) {
+    this.storage.create();
+  }
+  
+  async guardarTexto() {
+    await this.storage.set('textoGuardado', this.texto);
+  }
+  
+  async cargarTexto() {
+    this.texto = await this.storage.get('textoGuardado');
+  }
 
 }

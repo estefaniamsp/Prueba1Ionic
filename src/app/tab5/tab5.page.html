@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title>
+        Calculadora de raices cuadraticas
+      </ion-title>
+    </ion-toolbar>
+</ion-header>
+  
+  <ion-content class="ion-padding">
+
+    <ion-item>
+      <ion-label position="floating">Coeficiente a</ion-label>
+      <ion-input type="number" [(ngModel)]="a"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label position="floating">Coeficiente b</ion-label>
+      <ion-input type="number" [(ngModel)]="b"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label position="floating">Coeficiente c</ion-label>
+      <ion-input type="number" [(ngModel)]="c"></ion-input>
+    </ion-item>
+  
+    <ion-button expand="full" (click)="calcularRaices()">Calcular Raíces</ion-button>
+  
+    <ion-item *ngIf="raiz1 !== null && raiz2 !== null">
+      <ion-label>Raíz 1: {{ raiz1 }}</ion-label>
+    </ion-item>
+    <ion-item *ngIf="raiz1 !== null && raiz2 !== null">
+      <ion-label>Raíz 2: {{ raiz2 }}</ion-label>
+    </ion-item>
+    <ion-item *ngIf="raiz1 === null && raiz2 === null">
+      <ion-label>No hay raíces reales</ion-label>
+    </ion-item>
+  </ion-content>
+  

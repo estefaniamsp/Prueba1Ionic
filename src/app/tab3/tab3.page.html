@@ -6,30 +6,17 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Texto</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  
-  <ion-content>
-    <ion-grid>
-      <ion-col>
-        <ion-row>
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Guardar Texto</ion-title>
+  </ion-toolbar>
+</ion-header>
 
-          <ion-item>
-            <ion-input label="">Ingrese el texto</ion-input>
-          </ion-item>
-
-          <ion-button shape="round"> Guardar
-            <ion-icon name="download-outline"></ion-icon>
-          </ion-button>
-          
-          
-        </ion-row>
-      </ion-col>
-    </ion-grid>
-  </ion-content>
-
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Texto a Guardar</ion-label>
+    <ion-textarea [(ngModel)]="texto"></ion-textarea>
+  </ion-item>
+  <ion-button expand="full" (click)="guardarTexto()">Guardar</ion-button>
+  <ion-button expand="full" (click)="cargarTexto()">Cargar</ion-button>
 </ion-content>

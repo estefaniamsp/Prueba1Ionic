@@ -6,25 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['tab4.page.scss']
 })
 export class Tab4Page {
+  fechaInicio: string = '';  
+  fechaFin: string = '';     
+  dias: number | null = null;
 
-  resultado: string = '';
-
-  constructor() {}
-
-  append(symbol: string) {
-    this.resultado += symbol;
-  }
-
-  clear() {
-    this.resultado = '';
-  }
-
-  calculate() {
-    try {
-      this.resultado = eval(this.resultado);
-    } catch (e) {
-      this.resultado = 'Error';
+  calcularDias() {
+    if (this.fechaInicio && this.fechaFin) {
+      const inicio = new Date(this.fechaInicio);
+      const fin = new Date(this.fechaFin);
+      this.dias = Math.floor((fin.getTime() - inicio.getTime()) / (1000 * 60 * 60 * 24));
+    } else {
+      this.dias = null; 
     }
   }
-
 }
