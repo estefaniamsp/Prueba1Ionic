@@ -1,132 +1,183 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Biografia
-    </ion-title>
+    <ion-title>Biografía</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">ESTEFANIA MELISA SANCHEZ PARRAGA</ion-title>
+      <ion-title size="large">Estefania Melisa Sanchez Parraga</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <ion-grid class="ion-padding">
-    
-    <ion-row  class="custom-background light-background">
-      <ion-col class="center-content">
-        <h2 class="bold-name">ESTEFANIA MELISA SANCHEZ PARRAGA</h2>
-        <p>
-          <ion-icon name="call-outline" class="color-icon"></ion-icon> 0992190967
-        </p>
-        <p>
-          <ion-icon name="mail-outline" class="color-icon"></ion-icon> estefi2000ms2gmail.com
-        </p>
-        <p>
-          <ion-icon name="home-outline" class="color-icon"></ion-icon> Calle Bellavista y Chuquisaca, Sector La Ofelia, Quito
-        </p>
+
+    <ion-row class="custom-background light-background">
+      <ion-col size="6" class="center-content">
+        <h2 class="bold-name">Estefania Melisa Sanchez Parraga</h2>
+        <ion-row>
+          <ion-col>
+            <ion-icon name="call-outline" class="color-icon"></ion-icon> 0992190967
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-icon name="mail-outline" class="color-icon"></ion-icon> estefi2000ms2gmail.com
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-icon name="home-outline" class="color-icon"></ion-icon> Quito, Ecuador
+          </ion-col>
+        </ion-row>
       </ion-col>
-      <ion-col class="center-col">
-        <ion-img
-          src="assets/icon/yo.jpeg"
-          alt="Estefania Sanchez"
-          class="img-estef"
-        ></ion-img>
+      <ion-col size="6" class="center-col">
+        <ion-avatar>
+          <ion-img src="assets/icon/yo.jpeg" alt="Estefania Sanchez"></ion-img>
+        </ion-avatar>
       </ion-col>
     </ion-row>
 
     <ion-row>
-      
-      <ion-col >
-        <ion-grid>
-          <ion-row>
-            <ion-col class="text-h1">
-              <ion-text class="text-color">
-                <h1>Mi nombre es Estfenia Melisa Sánchez Párraga, nací en la ciudad de Santo Domingo de los Colorados, el 11 de Diciembre del 2000. Mis padres son de la provincia de Manabí, ellos se conocieron en Manta, mi padre Secundino Sánchez, nació en un pueblo llamado 24 de Mayo y mi madre, Maritza Párraga, nació en la ciudad de Manta. Tengo 3 hermanos, Johanna quien es la mayor, nació en Manta, Eduardo quien es que le sigue, nació en El Carmen y Jandry quien nació en Portoviejo.
-                Estudié en varias escuelas católicas, de las cuales aprendí en su mayoria grandes cosas, como nadar y realizar otros tipos de deportes como gimnasia, fútbol o basquetball. </h1>
-                <h1>En la adolescencia estudié el colegio en la Unidad Educativa Santo Domingo, considerado uno de los mejores de la ciudad, los dos ultimos años de colegio, los estuve estudiando ahi mismo pero con una modalidad diferente que se llamaba Bachillerato Internacional donde logré conseguir el diploma y pude ir a estudiar una carrera en la ciudad de Moscú, Rusia. Esa parte de mi vida pasé dos años sin ver a mi familia, pero estuve conociendo parte de la cultura de Rusia, ahí estuve estudiante la carrera de Filologia Rusa, pues quería especializarme en Idiomas, sin embargo por pandemia y problemas en mi salud, decidí regresar a Ecuador y luego comenzar a estudiar la actual carrera que es Desarrollo de Software.</h1>
-                
-                <div class="social-buttons">
-                  <ion-button href="https://www.linkedin.com/feed/" target="_blank" color="primary">
-                    <ion-icon name="logo-linkedin" slot="start"></ion-icon> LinkedIn
-                  </ion-button>
-                </div>
-                
-                <h1>Un poco de mis habilidades, formación académica, entre otras cosas se verán a continuación:</h1>
-
-              </ion-text>
-            </ion-col>
-          </ion-row>
-
-          <ion-row>
-            <ion-col class="text-h1">
-              <ion-text class="bold-title">HABILIDADES</ion-text>
-              <ion-text class="text-color">
-                <p>Algunas tecnicas que he ido aprendiendo a lo largo de los años además de los estudios actuales son los siguientes: Word, PowerPoint, Excel, Python, C++, HTML, CSS, JavaScript, Java</p>
-                <p>Me considero una persona que puede realizar las siguientes habilidades profesionales: Trabajo en Equipo, Proactividad, Liderazgo, Responsabilidad, Puntualidad, Comunicación, Dedicación</p>
-              </ion-text>
-            </ion-col>
-          </ion-row>
-
-          <ion-row>
-            <ion-col class="text-h1">
-              <ion-text class="bold-title">FORMACIÓN ACADÉMICA</ion-text>
-              <ion-text class="text-color">
-                <p class="related">- 2013 | 2019, Colegio Santo Domingo de los Colorados, Santo Domingo</p>
-                <p class="related">- Bachiller en Ciencias</p>
-              </ion-text>
-              <ion-text class="text-color">
-                <p class="related">- 2019 | 2020, Escuela Superior de Economía, Moscú, Rusia</p>
-                <p class="related">- Año preparatorio ruso</p>
-              </ion-text>
-              <ion-text class="text-color">
-                <p class="related">- 2020 | 2021, Escuela Superior de Economía, Moscú, Rusia</p>
-                <p class="related">- Año de estudio en Filología Rusa</p>
-              </ion-text>
-              <ion-text class="text-color">
-                <p class="related">- 2022 | Presente, Escuela Politécnica Nacional, Quito, Ecuador</p>
-                <p class="related">- Tecnología Superior en Desarrollo de Software</p>
-              </ion-text>
-            </ion-col>
-          </ion-row>
-
-          <ion-row>
-            <ion-col class="text-h1">
-              <ion-text class="bold-title">EXPERIENCIA PROFESIONAL</ion-text>
-              <ion-text class="text-color">
-                <p>COMEDOR “MARITZA”</p>
-                <p>Ayudante | Santo Domingo, Ecuador</p>
-                <p>Tareas Realizadas | Servicio al cliente</p>
-              </ion-text>
-
-              <ion-text class="text-color">
-                <p>ALFA IMPRESIÓN</p>
-                <p>Servicio | Quito, Ecuador</p>
-                <p>Tareas Realizadas | Atención al cliente, documentación, organización.</p>
-              </ion-text>
-            </ion-col>
-          </ion-row>
-
-          <ion-row>
-            <ion-col class="text-data light-accent-background">
-              <ion-text class="bold-title">IDIOMAS</ion-text>
-
-              <div class="language-section">
-                <ion-label>Inglés</ion-label>
-                <ion-progress-bar value="0.75"></ion-progress-bar>
-              </div>
-
-              <div class="language-section">
-                <ion-label>Ruso</ion-label>
-                <ion-progress-bar value="0.50"></ion-progress-bar>
-              </div>
-            </ion-col>
-          </ion-row>
-
-        </ion-grid>
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Resumen</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p>Mi nombre es Estfenia Melisa Sánchez Párraga, nací en la ciudad de Santo Domingo de los Colorados, el 11 de Diciembre del 2000. Mis padres son de la provincia de Manabí, ellos se conocieron en Manta, mi padre Secundino Sánchez, nació en un pueblo llamado 24 de Mayo y mi madre, Maritza Párraga, nació en la ciudad de Manta. Tengo 3 hermanos, Johanna quien es la mayor, nació en Manta, Eduardo quien es que le sigue, nació en El Carmen y Jandry quien nació en Portoviejo.
+            Estudié en varias escuelas católicas, de las cuales aprendí en su mayoria grandes cosas, como nadar y realizar otros tipos de deportes como gimnasia, fútbol o basquetball. </p>
+            <p>En la adolescencia estudié el colegio en la Unidad Educativa Santo Domingo, considerado uno de los mejores de la ciudad, los dos ultimos años de colegio, los estuve estudiando ahi mismo pero con una modalidad diferente que se llamaba Bachillerato Internacional donde logré conseguir el diploma y pude ir a estudiar una carrera en la ciudad de Moscú, Rusia. Esa parte de mi vida pasé dos años sin ver a mi familia, pero estuve conociendo parte de la cultura de Rusia, ahí estuve estudiante la carrera de Filologia Rusa, pues quería especializarme en Idiomas, sin embargo por pandemia y problemas en mi salud, decidí regresar a Ecuador y luego comenzar a estudiar la actual carrera que es Desarrollo de Software.</p>
+          </ion-card-content>
+        </ion-card>
       </ion-col>
     </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Habilidades</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-row>
+              <ion-col>
+                <ion-chip color="primary">Trabajo en Equipo</ion-chip>
+                <ion-chip color="secondary">Proactividad</ion-chip>
+              </ion-col>
+              <ion-col>
+                <ion-chip color="tertiary">Liderazgo</ion-chip>
+                <ion-chip color="success">Responsabilidad</ion-chip>
+              </ion-col>
+            </ion-row>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Tecnologías</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-row>
+              <ion-col>
+                <ion-chip color="primary">HTML</ion-chip>
+                <ion-chip color="secondary">CSS</ion-chip>
+              </ion-col>
+              <ion-col>
+                <ion-chip color="tertiary">JavaScript</ion-chip>
+                <ion-chip color="success">Python</ion-chip>
+              </ion-col>
+            </ion-row>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Formación Académica</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-list>
+              <ion-item>
+                <ion-label>Unidad Educativa Santo Domingo</ion-label>
+                <ion-note slot="end">2013 - 2019</ion-note>
+              </ion-item>
+              <ion-item>
+                <ion-label>Escuela Superior de Economía, Moscú</ion-label>
+                <ion-note slot="end">2019 - 2021</ion-note>
+              </ion-item>
+              <ion-item>
+                <ion-label>Escuela Politécnica Nacional, Quito</ion-label>
+                <ion-note slot="end">2022 - Presente</ion-note>
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Experiencia Profesional</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-list>
+              <ion-item>
+                <ion-label>Comedor Maritza</ion-label>
+                <ion-badge slot="end" color="success">Ayudante</ion-badge>
+              </ion-item>
+              <ion-item>
+                <ion-label>Alfa Impresión</ion-label>
+                <ion-badge slot="end" color="warning">Servicio</ion-badge>
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Idiomas</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-row>
+              <ion-col size="6">
+                <ion-label>Inglés</ion-label>
+                <ion-progress-bar value="0.75"></ion-progress-bar>
+              </ion-col>
+              <ion-col size="6">
+                <ion-label>Ruso</ion-label>
+                <ion-progress-bar value="0.5"></ion-progress-bar>
+              </ion-col>
+            </ion-row>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="social-buttons">
+      <ion-col>
+        <ion-button href="https://www.linkedin.com/in/estefan%C3%ADa-s%C3%A1nchez-p%C3%A1rraga-03673b270/" target="_blank" color="primary">
+          <ion-icon name="logo-linkedin" slot="start"></ion-icon> LinkedIn
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button href="https://github.com/estefaniamsp" target="_blank" color="dark">
+          <ion-icon name="logo-github" slot="start"></ion-icon> GitHub
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
   </ion-grid>
 </ion-content>
+
