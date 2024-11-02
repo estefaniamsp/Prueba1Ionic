@@ -8,13 +8,13 @@ import { SplashScreen } from '@capacitor/splash-screen';
 })
 export class AppComponent {
   constructor() {
-    this.initializeApp();
+    this.initializeSplash();
   }
 
-  initializeApp() {
-    SplashScreen.show({
+  async initializeSplash() {
+    await SplashScreen.show({
       autoHide: true,
-      showDuration: 2000
+      showDuration: 3000
     });
   }
 }
