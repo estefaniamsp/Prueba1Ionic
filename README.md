@@ -37,6 +37,12 @@
 ## Pestaña 5
 ![WhatsApp Image 2024-10-26 at 8 47 03 PM (3)](https://github.com/user-attachments/assets/8f2abb6c-47a3-4948-a5c3-65fac324d2af)
 
+## App Mejorada
+### Icono
+![WhatsApp Image 2024-11-02 at 2 03 01 PM](https://github.com/user-attachments/assets/7f961e2c-6cc3-47e8-965f-c53eb8a113f6)
+
+### Splash Screen
+![WhatsApp Image 2024-11-02 at 2 03 01 PM (1)](https://github.com/user-attachments/assets/fb59651a-9267-4d3e-a2a3-79bf6beb0f59)
 
 
 
